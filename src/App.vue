@@ -1,5 +1,7 @@
 <template>
-  <HelloWorld title="Animaciones"/>
+  <div class="tips__wrapper">
+    <HelloWorld title="Animaciones"/>
+  </div>
 </template>
 
 <script>
@@ -61,7 +63,15 @@ export default {
 
   // apply font
   * {
+    box-sizing: border-box;
     font-family: 'roboto';
     font-size: 16px;
+    color: #0C0C1E;
+  }
+
+  // styles
+  .tips__wrapper {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
   }
 </style>
