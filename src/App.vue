@@ -1,8 +1,5 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <HelloWorld title="Animaciones"/>
 </template>
 
 <script>
@@ -17,12 +14,54 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+  // css reset
+  html, body, div, span, applet, object, iframe, table, caption,
+  tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+  kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+  acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend {
+      vertical-align: baseline;
+      font-family: inherit;
+      font-weight: inherit;
+      font-style: inherit;
+      font-size: 100%;
+      outline: 0;
+      padding: 0;
+      margin: 0;
+      border: 0;
+  }
+  :focus {
+      outline: 0;
+  }
+  body {
+      background: white;
+      line-height: 1;
+      color: black;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  table {
+      border-collapse: separate;
+      border-spacing: 0;
+  }
+  caption, th, td {
+      font-weight: normal;
+      text-align: left;
+  }
+  blockquote:before, blockquote:after, q:before, q:after {
+      content: "";
+  }
+  blockquote, q {
+      quotes: "" "";
+  }
+
+  // apply font
+  * {
+    font-family: 'roboto';
+    font-size: 16px;
+  }
 </style>
