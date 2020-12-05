@@ -1,16 +1,19 @@
 <template>
   <div class="tips__wrapper">
-    <HelloWorld title="Animaciones"/>
+    <AnimationCard title="Animaciones"/>
+    <GitCard title="Git"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AnimationCard from './components/AnimationCard.vue'
+import GitCard from './components/GitCard.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AnimationCard,
+    GitCard,
   }
 }
 </script>
