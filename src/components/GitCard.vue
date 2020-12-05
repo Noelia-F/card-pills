@@ -101,8 +101,5 @@ export default {
     &> :not(last-child) {
       margin-bottom: 1rem;
     }
-    &--opacity {
-      position: relative;
-    }
   }
 </style>
