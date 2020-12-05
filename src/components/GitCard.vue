@@ -98,63 +98,11 @@ export default {
     align-items: center;
     justify-content: space-between;
 
-    &> :not(last-child):not(.tip__dummy) {
+    &> :not(last-child) {
       margin-bottom: 1rem;
     }
     &--opacity {
       position: relative;
     }
   }
-
-  // example
-  .tip__example {
-    border-radius: 2px;
-    height: 75px;
-    width: 75px;
-    background-color: #4D0011;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    &--position {
-      animation-name: position;
-    }
-    &--scale {
-      animation-name: scale;
-    }
-    &--rotation {
-      animation-name: rotation;
-    }
-    &--opacity {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      animation-name: opacity;
-    }
-  }
-  .tip__dummy {
-    border-radius: 50%;
-    margin: 1rem 1rem 2rem 1rem;
-    height: 43px;
-    width: 43px;
-    background-color: #0C0C1E;
-  }
-
-  // animations
-  @keyframes position {
-    from {transform: translate(0, 0)}
-    to {transform: translate(50px, 0)}
-  }
-  @keyframes scale {
-    from {transform: scale(1)}
-    to {transform: scale(0.5)}
-  }
-  @keyframes rotation {
-    from {transform: rotate(0)}
-    to {transform: rotate(45deg)}
-  }
-  @keyframes opacity {
-    from {opacity: 1}
-    to {opacity: 0.4}
-  }
-
 </style>
