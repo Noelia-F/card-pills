@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'AnimationCard',
   props: {
     title: String
   }
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
+<style lang="scss" scoped>
   // card general
   .tip__card {
     padding: 1.5rem;
@@ -86,6 +86,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 
     &> :not(last-child):not(.tip__dummy) {
       margin-bottom: 1rem;
